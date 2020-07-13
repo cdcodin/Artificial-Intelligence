@@ -1,0 +1,3 @@
+# Artificial-Intelligence
+基于施老师讲授的人工智能课程创建了这个仓库，这其中会收录一些算法和神经网络的实现。
+仓库中并不使用tensorflow或者是keras等神经网络库，只是使用numpy、matplotlib等工具包实现最基础的神经网络的构建。
