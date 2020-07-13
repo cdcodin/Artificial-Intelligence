@@ -32,6 +32,7 @@ while(True):
         X_UPPER = np.array([100,100]) #决策变量上界
         X_LOWER = np.array([0,0]) #决策变量下界
         target = [30,50]
+        V_max = 5 #最大移动速度
         #目标函数 能量函数E
         def E(params):
             return (params[0] - 30)**2 + (params[1] - 50)**2
@@ -40,6 +41,7 @@ while(True):
         X_UPPER = np.array([6.28,6.28]) #决策变量上界
         X_LOWER = np.array([0,0]) #决策变量下界
         target = [4.7,4.7]
+        V_max = 5 #最大移动速度
         #目标函数 能量函数E
         def E(params):
             return np.sin(params[0]) + np.cos(2*params[0]) + np.sin(params[1]) + np.cos(2*params[1])
@@ -50,9 +52,9 @@ while(True):
     W_init = 0.9 #初始权重
     W_final = 0.4 #终止权重
     c1 = 1 #认知参数
-    c2 = 2 #社群参数
+    c2 = 1.4 #社群参数
     V_init = 1 #初始参数
-    V_max = 30 #最大移动速度
+    V_max = 5 #最大移动速度
     # V_min = 0 #最小移动速度不设置
     Iter_final = 100 #范围为 [100,500]
     W_k = W_init #权重
